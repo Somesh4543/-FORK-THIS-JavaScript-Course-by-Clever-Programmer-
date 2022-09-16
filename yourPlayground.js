@@ -301,7 +301,7 @@ const actors = [
 // let result = actors.filter(actor => actor.networth > 6000000)
 // console.log(result)
 // let names = result.map(actor => actor.name).join(', ')
-console.log(actors.reduce((prev, curr) => prev + curr.networth, 0))
+// console.log(actors.reduce((prev, curr) => prev + curr.networth, 0))
 
 // playground.innerHTML= `<h1>${names}</h1>`
 
@@ -320,4 +320,14 @@ function sum(a, b) {
 // const result = nu.reduce((a, b) => a + b, 0) 
 // console.log(result)
 
+// randomFruit([1, 2]) :- 2
+// randomFruit([1, 2]) :- 1
+const randomFruit = (fruits) => {
+  const randomNumber = Math.floor(Math.random() * fruits.length)
+
+  return fruits[randomNumber]
+}
+
+let fruits = ['banana', 'apple', 'orange', 'pear']
+console.log(randomFruit(fruits))
 
